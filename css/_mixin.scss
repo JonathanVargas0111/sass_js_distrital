@@ -1,0 +1,18 @@
+@mixin input-textarea {
+    border: none;
+    border-radius: $input-border-radius;
+    padding: 10px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+@mixin btn($background-color, $text-color) {
+    background-color: $background-color;
+    color: $text-color;
+    border: none;
+    border-radius: $input-border-radius;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}

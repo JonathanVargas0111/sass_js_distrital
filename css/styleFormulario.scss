@@ -1,0 +1,43 @@
+@import 'variables';
+@import 'mixin';
+
+$input-border-radius: 4px;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 12vh;
+  background-color: $primary-color;
+  padding: 1rem;
+
+  &__label {
+    color: $text-color;
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+
+  &__input,
+  &__textarea {
+    @include input-textarea;  
+    &::placeholder {
+      color: $text-color;
+    }
+  }
+
+  &__textarea {
+    height: 120px;
+  }
+
+  &__submit {
+    @include btn($success-color,$text-color);  
+    &:hover {
+      background-color: darken($success-color, 9);
+      color: $text-color;
+      border: none;
+    }
+  }
+}
