@@ -16,3 +16,12 @@
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
+@mixin inputSearch(){
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    height: 30px;
+    width: 200px;
+}

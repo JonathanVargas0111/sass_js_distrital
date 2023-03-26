@@ -1,0 +1,60 @@
+@import 'variables';
+@import 'mixin';
+
+.title-page{
+    text-align: center;
+}
+.section-products{
+    text-align: center;
+    background-color: $primary-color;
+    .filters{
+        padding: 20px 0;    
+        box-sizing: content-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .container-category{
+            .categories__category{
+                @include btn($secondary-color,$text-color);  
+                margin: 0 10px;
+            }
+        }
+        .container-search{
+            &__input-search{                
+                @include inputSearch(); 
+
+            }
+            
+            &__bt-search{
+                @include btn($secondary-color,$text-color);  
+                margin: 0 10px;
+            }
+            
+
+        }
+    }
+}
+
+
+
+.products-container{
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px 50px;
+    text-align: center;
+    background-color: rgb(250, 250, 250);
+    .product{
+        width: 23%;
+        margin: 10px;
+        border-radius: 10px;
+        background-color: white;
+            &__title{
+                font-size: 20px;
+            }
+            &__image{
+                width: 20%;
+            }
+        }
+}
