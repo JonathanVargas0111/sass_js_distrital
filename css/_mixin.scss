@@ -2,9 +2,10 @@
     border: none;
     border-radius: $input-border-radius;
     padding: 10px;
-    margin-bottom: 16px;
     font-size: 16px;
     font-family: 'Helvetica Neue', sans-serif;
+    margin: 10px;  
+
 }
 @mixin btn($background-color, $text-color) {
     background-color: $background-color;

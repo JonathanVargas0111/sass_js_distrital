@@ -1,35 +1,41 @@
+.section-coments {
+  width: 40%;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: aliceblue;
+}
+.section-coments__title {
+  text-align: center;
+  margin: 0;
+}
+.section-coments .list-comments {
+  background-color: azure;
+  /* &__textarea{
+    @include input-textarea;
+    height: 40px;
+  } */
+}
+.section-coments .list-comments__card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
 .form {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
-  margin: 0 auto;
-  border-radius: 5px;
-  margin-top: 12vh;
-  background-color: #A7D3FA;
-  padding: 1rem;
-}
-.form__label {
-  color: #333333;
-  font-size: 16px;
-  margin-bottom: 8px;
-  font-weight: 600;
+  padding: 0;
 }
 .form__input, .form__textarea {
   border: none;
   border-radius: 4px;
   padding: 10px;
-  margin-bottom: 16px;
   font-size: 16px;
   font-family: "Helvetica Neue", sans-serif;
-}
-.form__input::-moz-placeholder, .form__textarea::-moz-placeholder {
-  color: #333333;
-}
-.form__input::placeholder, .form__textarea::placeholder {
-  color: #333333;
+  margin: 10px;
 }
 .form__textarea {
-  height: 120px;
+  height: 40px;
 }
 .form__submit {
   background-color: #5BF5C4;

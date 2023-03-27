@@ -1,34 +1,70 @@
 @import 'variables';
 @import 'mixin';
 
+.section-coments{
+  width: 40%;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: aliceblue;
+  
+  &__title{
+    text-align: center;
+    margin: 0;
+  }
+  .list-comments{
+    .card-comment{
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      margin: 5px 0;
+      &__user{
+        margin: 3px;
+        font-size: 1rem;
+      }
+      &__date{
+        margin: 1px;
+        font-size: 0.7rem;
+      }
+      .update-comment{
+        width: 25%;
+        @include btn($success-color,$text-color);  
+        margin-bottom: 5px;
+        &:hover {
+          background-color: darken($success-color, 9);
+          color: $text-color;
+          border: none; 
+        }
+      }
+      .delete-comment{
+        width: 25%;
+        @include btn($danger-color,$text-color);  
+        &:hover {
+          background-color: darken($danger-color, 9);
+          color: $text-color;
+          border: none; 
+        }
+      }
+    }
+  } 
+
+}
 
 .form {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
-  margin: 0 auto;
-  border-radius: 5px;
-  margin-top: 12vh;
-  background-color: $primary-color;
-  padding: 1rem;
-
-  &__label {
-    color: $text-color;
-    font-size: 16px;
-    margin-bottom: 8px;
-    font-weight: 600;
+  padding: 0;
+  border-top: solid white 4px;
+  &__title{
+    text-align: center;
   }
-
   &__input,
   &__textarea {
-    @include input-textarea;  
-    &::placeholder {
-      color: $text-color;
-    }
+    @include input-textarea;
   }
 
   &__textarea {
-    height: 120px;
+    height: 40px;
   }
 
   &__submit {
