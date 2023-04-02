@@ -5,27 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/dist/styleFormulario.css">
+    <link rel="stylesheet" href="./css/styleFormulario.css">
     <title>Formulario comentarios</title>
 </head>
 
 <body>    
-    <section class="section-coments">
-        <h1>Comentarios</h1>
-        <div id="comments">
+    <div class="container">
+        <section class="section-coments">
+            <h1 class="form__title">Comentarios</h1>
+            <div id="comments" class="list-comments">
+            </div>
+        </section>
 
-        </div>
-    </section>
-
-	<form class="form" id="comment-form">
-		<label class="form__label" for="user-input">Usuario:</label>
-		<input class="form__input" type="text" id="user-input" required placeholder="Ingresa tu nombre/usuario">
-
-		<label class="form__label" for="comment-input">Comentario:</label>
-		<textarea class="form__textarea" id="comment-input" required placeholder="Escribe tu comentario"></textarea><br>
-
-		<button class="form__submit" type="submit">Enviar</button>
-	</form>
+        <form class="form" id="comment-form">
+            <input class="form__input" type="text" id="user-input" required placeholder="Nombre/usuario">  
+            <div class="form-coment">
+                <textarea class="form-coment__textarea" id="comment-input" required placeholder="Agregar un comentario"></textarea><br>
+                <button class="form-coment__submit" type="submit">Publicar</button>
+            </div>
+        </form>
+    </div>
     
 
     <script src="./js/clases/comment.js"></script>

@@ -4,7 +4,7 @@
 
 .section-products {
   text-align: center;
-  background-color: #A7D3FA;
+  background-color: #393d42;
 }
 .section-products .filters {
   padding: 20px 0;
@@ -14,11 +14,10 @@
   justify-content: space-evenly;
 }
 .section-products .filters .container-category .categories__category {
-  background-color: #47DED9;
-  color: #333333;
+  background-color: #6a6e73;
+  color: #9fa3a9;
   border: none;
   border-radius: 4px;
-  padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -33,11 +32,10 @@
   width: 200px;
 }
 .section-products .filters .container-search__bt-search {
-  background-color: #47DED9;
-  color: #333333;
+  background-color: #6a6e73;
+  color: #9fa3a9;
   border: none;
   border-radius: 4px;
-  padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;

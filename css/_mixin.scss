@@ -1,22 +1,40 @@
-@mixin input-textarea {
+@mixin input-textarea ($background-color, $text-color){
     border: none;
     border-radius: $input-border-radius;
     padding: 10px;
     font-size: 16px;
     font-family: 'Helvetica Neue', sans-serif;
     margin: 10px;  
-
+    background-color: $background-color;
+    color:$text-color;
+    resize: none;
 }
 @mixin btn($background-color, $text-color) {
     background-color: $background-color;
     color: $text-color;
     border: none;
     border-radius: $input-border-radius;
-    padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
+@mixin btn-icon($background-color, $text-color) {
+    background-color: $background-color;
+    color: $text-color;
+    border: none;
+    border-radius: $input-border-radius;
+    font-size: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 5px;
+    &:hover {
+        background-color: $text-color;
+        color: $background-color;
+        border: none; 
+    }
+}
+
 
 @mixin inputSearch(){
     appearance: none;
