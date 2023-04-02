@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller de SASS JS</title>
     <link rel="stylesheet" href="css/styleIndex.css">
+    <link rel="stylesheet" href="css/styleMenu.css">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
         <nav class="menu">
             <ul class="menu__list">
                 <li class="menu__item">
-                    <a href="page1.html" class="menu__link">Inicio</a>
+                    <a href="index.html" class="menu__link">Inicio</a>
                 </li>
                 <li class="menu__item">
                     <a href="page2.html" class="menu__link">Pagina 2</a>
@@ -26,11 +27,25 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        
+        <h3>Información sobre la ampliación</h3>
+        <p>
+            La aplicación utiliza tecnologías como HTML, CSS, JS y SCSS. Se compone de tres páginas principales. En la primera página, se presenta información relevante sobre la aplicación, junto con un menú que permite navegar fácilmente a través de las otras páginas.
+        </p>
+        <p>
+            En la segunda página, se hace uso de la API fakestoreapi.com. En particular, se utiliza el endpoint https://fakestoreapi.com/products, el cual retorna un array de objetos que contienen información sobre productos ficticios. En esta página, los usuarios pueden interactuar con los datos utilizando filtros por categoría o mediante un campo de búsqueda que permite buscar productos por nombre.
+            <a href="page2.html" class="">Pagina 2</a>
+        </p>
+        <img src="resources/img/imgPage2.PNG" alt="">
+        <p>
+            La tercera página cuenta con un sistema que permite a los usuarios crear comentarios con su nombre y el texto del comentario. Los comentarios pueden ser editados después de ser creados. Al hacer clic en el comentario, se habilitará el botón de guardar y se deshabilitará el botón de eliminar. Después de hacer clic en guardar, el botón de eliminar se habilitará nuevamente y la fecha del comentario se actualizará para indicar que ha sido editado. Para mejorar la interacción, se agrega un asterisco (*) junto a la fecha para indicar que el comentario ha sido editado.
+            <a href="page3.html" class="">Pagina 3</a>
+        </p>
+        <img src="resources/img/imgPage3.PNG" alt="">
+
     </main>
 
-    <script src="js/menu.js"></script>
 </body>
 
 </html>

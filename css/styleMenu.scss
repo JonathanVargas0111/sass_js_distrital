@@ -1,0 +1,33 @@
+@import 'variables';
+@import 'mixin';
+
+.menu {
+    width: 80%;
+    margin: 50px auto;
+    font-size: 1.5rem;
+    text-align: center;
+    
+    &__list {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    &__item {
+      margin-right: 20px;
+      
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    
+    &__link {
+      color: $text-color;
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
