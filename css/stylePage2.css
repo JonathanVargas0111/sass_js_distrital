@@ -1,10 +1,14 @@
+body {
+  background-color: #1f2124;
+}
+
 .title-page {
   text-align: center;
+  color: #9fa3a9;
 }
 
 .section-products {
   text-align: center;
-  background-color: #393d42;
 }
 .section-products .filters {
   padding: 20px 0;
@@ -21,6 +25,7 @@
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
+  padding: 10px;
   margin: 0 10px;
 }
 .section-products .filters .container-search__input-search {
@@ -39,6 +44,7 @@
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
+  padding: 10px;
   margin: 0 10px;
 }
 
@@ -49,7 +55,6 @@
   flex-wrap: wrap;
   padding: 20px 50px;
   text-align: center;
-  background-color: rgb(250, 250, 250);
 }
 .products-container .product {
   width: 23%;
